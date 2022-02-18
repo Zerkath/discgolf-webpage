@@ -1,0 +1,10 @@
+@use 'base';
+
+.navGrid {
+    @extend %card-layout;
+    @extend %card-background;
+}
+
+.navLink {
+    padding: 5px;
+}

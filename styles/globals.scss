@@ -1,3 +1,4 @@
+
 html,
 body {
   padding: 0;
@@ -11,9 +12,9 @@ body {
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   body {
-    background-position-x: -650px;
+    background-position-x: -500px;
   }
 }
 

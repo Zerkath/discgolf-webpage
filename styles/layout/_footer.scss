@@ -1,0 +1,19 @@
+@use '../base/base';
+@use '../base/bar';
+
+.footer {
+    min-height: 5vh;
+    background-color: rgba(200, 230, 255, 0.9);
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #2f2f2f;
+}
+
+.footer a {
+  @extend %barLayoutParagraph;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}

@@ -1,29 +1,28 @@
 
 import type { NextComponentType } from 'next'
 import Link from 'next/link'
-import { prependOnceListener } from 'process'
-import styles from '../styles/NavigationBar.module.scss'
 
 export const NavigationBar: NextComponentType = () => {
   return (
-    <div className={styles.navGrid}>
+    <div className='navbar'>
       <NavContent display="Home" link='/'></NavContent>
-      <NavContent display="Home" link='/'></NavContent>
+      <NavContent display="Old-Index" link='/pages/old-index'></NavContent>
       <NavContent display="Home" link='/'></NavContent>
     </ div>
   )
 }
 
 const NavContent = (props: PropsContent) => {
+  const { display, link } = props
   return (
-    <Link href="/">
-      <a className={styles.navLink}>{props.display}</a>
-    </Link>
+    <Link href={link} >
+      <a>{display}</a>
+    </Link >
 
   )
 }
 
 type PropsContent = {
-  display: String,
-  link: String
+  display: string,
+  link: string
 }

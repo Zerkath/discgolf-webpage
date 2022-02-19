@@ -1,0 +1,15 @@
+@use 'base';
+
+%barLayout {
+    display: flex;
+    flex: 1;
+    padding: 2rem 0;
+    background-color: rgba(200, 230, 255, 0.9);
+}
+
+%barLayoutParagraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}

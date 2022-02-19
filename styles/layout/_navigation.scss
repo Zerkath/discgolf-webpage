@@ -1,0 +1,10 @@
+@use '../base/bar';
+
+.navbar {
+    @extend %barLayout;
+    border-bottom: 1px solid #2f2f2f;
+}
+
+.navbar a {
+    @extend %barLayoutParagraph
+}

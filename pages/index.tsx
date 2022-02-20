@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Footer from '../templates/Footer'
-import { NavigationBar } from '../templates/NavigationBar'
+import { Footer, NavigationBar } from '../templates/bars'
 
 const Home: NextPage = () => {
   return (
@@ -12,7 +11,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <NavigationBar>test</NavigationBar>
+      <NavigationBar />
 
       <main className='main'>
         <div className='grid'>

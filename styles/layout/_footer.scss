@@ -1,16 +1,21 @@
 @use '../base/base';
-@use '../base/bar';
 
 .footer {
-    min-height: 5vh;
+    flex: 1;
+    padding: 1.2rem 0;
     background-color: rgba(200, 230, 255, 0.9);
     justify-content: center;
     align-items: center;
     border-top: 1px solid #2f2f2f;
 }
 
-.footer a {
-  @extend %barLayoutParagraph;
+.footer a, p {
+    display: inline-block;
+    min-width: fit-content;
+    margin: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0.4rem;
 }
 
 .logo {

@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
-import Footer from '../../templates/Footer'
-import { NavigationBar } from '../../templates/NavigationBar'
+import { Footer } from '../../templates/bars'
+import { NavigationBar } from '../../templates/bars/NavigationBar'
 
 const Home: NextPage = () => {
     return (

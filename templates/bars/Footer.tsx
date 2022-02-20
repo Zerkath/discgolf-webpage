@@ -1,11 +1,12 @@
-
-import type { NextComponentType } from 'next'
 import Image from 'next/image'
 
-
-const Footer: NextComponentType = () => {
+export const Footer = () => {
     return (
         <footer className='footer'>
+            <p>Contact details:</p>
+            <p>Email: example@example.com</p>
+            <p>Phone: +358 04123891152</p>
+
             <a
                 href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
                 target="_blank"
@@ -16,8 +17,6 @@ const Footer: NextComponentType = () => {
                     <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
                 </span>
             </a>
-        </footer>
+        </footer >
     )
 }
-
-export default Footer

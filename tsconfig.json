@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "templates/bars/index.ts"  ],
   "exclude": [
     "node_modules"
   ]

@@ -1,10 +1,14 @@
-@use '../base/bar';
-
 .navbar {
-    @extend %barLayout;
+    padding: 2rem 0;
+    background-color: rgba(200, 230, 255, 0.9);
     border-bottom: 1px solid #2f2f2f;
+    width: 100vw;
 }
 
 .navbar a {
-    @extend %barLayoutParagraph
+    display: inline-block;
+    min-width: fit-content;
+    border-radius: 0.2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }

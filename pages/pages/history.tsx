@@ -4,7 +4,7 @@ import { NavigationBar } from '../../templates/bars/NavigationBar'
 
 const Home: NextPage = () => {
     return (
-        <div>
+        <div className='container'>
             <NavigationBar />
             <main className='main'>
 

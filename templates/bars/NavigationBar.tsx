@@ -8,6 +8,7 @@ export const NavigationBar = () => {
             <NavContent display="Terminology" link='/pages/terminology' />
             <NavContent display="Disc Reviews" link='/pages/reviews' />
             <NavContent display="How to get started" link='/pages/how-to-start' />
+            <NavContent display="Flight number visualizer" link='/pages/visualizer' />
         </ div >
     )
 }

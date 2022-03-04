@@ -5,23 +5,24 @@ interface FlightNumbers {
     fade: number
 }
 
-export function debugGrid() {
+export function grid() {
     return (
-        <path stroke="grey" stroke-width=".02" d={debugGridString(20)} />
+        <path className="grid" stroke="grey" stroke-width=".02" d={gridString(20)} />
     )
 }
 
 type VisualizerProps = {
     flightNums: FlightNumbers,
-    discName: string
+    discName: string,
+    manufacturer: string
 }
 
 
-const debugGridString = (size: number): string => {
+const gridString = (size: number): string => {
     let accuaracy = 20
     let tenth = size / accuaracy
     var str = ""
-    for (let i = 1; i < accuaracy; i++) {
+    for (let i = 4; i < accuaracy; i++) {
         str += slice(i * tenth, size)
     }
     return str
@@ -29,7 +30,7 @@ const debugGridString = (size: number): string => {
 
 const slice = (divider: number, size: number): string => {
     // return `M ${divider} 0 V${size} M 0 ${divider} H${size} `
-    return `M 0 ${divider} H${size} `
+    return `M 0 ${divider} H${size / 2} `
 }
 
 function getFlightPath(flightNums: FlightNumbers, width: number, height: number): string {
@@ -82,10 +83,11 @@ export const FlightVisualizer = (props: VisualizerProps) => {
     let { speed, glide, stability, fade } = props.flightNums
     return (
         <svg viewBox="0 0 10 20" className='flight-visualization'>
-            <text x="0.2" y="0.8" fontSize={0.7}>{props.discName}</text>
-            <text dx="0.2" y="1.7" fontSize={0.6}>{`${speed} / ${glide} / ${stability} / ${fade}`}</text>
-            <path d={getFlightPath(props.flightNums, 10, 20)} stroke="black" fill="transparent" stroke-width={0.08}></path>
-            {debugGrid()}
+            <text x="0.2" y="1.2" fontSize={1.2}>{props.manufacturer}</text>
+            <text x="0.2" y="2.4" fontSize={1}>{props.discName}</text>
+            <text dx="0.2" y="3.6" fontSize={0.8}>{`${speed} / ${glide} / ${stability} / ${fade}`}</text>
+            <path className="flight" d={getFlightPath(props.flightNums, 10, 20)} stroke="black" fill="transparent" stroke-width={0.08}></path>
+            {grid()}
         </ svg >
     )
 }

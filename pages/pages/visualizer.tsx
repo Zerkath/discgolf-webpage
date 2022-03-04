@@ -24,10 +24,10 @@ let flight3: FlightNumbers = {
 }
 
 let flight4: FlightNumbers = {
-    speed: 2,
-    glide: 3,
-    stability: -4,
-    fade: 2
+    speed: 3,
+    glide: 1,
+    stability: 0,
+    fade: 3
 }
 
 
@@ -38,10 +38,10 @@ const Visualizer: NextPage = () => {
             <NavigationBar />
             <main className='main'>
                 <div className='card'>
-                    <FlightVisualizer flightNums={flight} discName="Westside Warship" />
-                    <FlightVisualizer flightNums={flight2} discName="Bomb" />
-                    <FlightVisualizer flightNums={flight3} discName="Driver" />
-                    <FlightVisualizer flightNums={flight4} discName="Driver" />
+                    <FlightVisualizer flightNums={flight} manufacturer='Westside' discName="Warship" />
+                    <FlightVisualizer flightNums={flight2} manufacturer='Westside' discName="Hatchet" />
+                    <FlightVisualizer flightNums={flight3} manufacturer="Latitude 64" discName="Ballista Pro" />
+                    <FlightVisualizer flightNums={flight4} manufacturer="Innova" discName="Pig" />
                 </div>
             </main>
             <Footer />

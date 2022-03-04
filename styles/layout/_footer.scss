@@ -1,23 +1,37 @@
 @use '../base/base';
 
 .footer {
-    padding: 1.2rem 0;
     background-color: rgba(200, 230, 255, 0.9);
     justify-content: center;
-    align-items: center;
     border-top: 1px solid #2f2f2f;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
-.footer a, p {
-    display: inline-block;
-    min-width: fit-content;
+.footer-container {
+  padding: 0 1em;
+  align-self: center;
+  max-width: 1000px;
+}
+
+.footer-content {
+  columns: 200px 3;
+  column-rule: black 1px solid;
+  column-gap: 2em;
+  padding-bottom: 2em;
+}
+
+.footer-content{
+  a, p {
     margin: 0;
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-top: 0.4rem;
+    margin-top: 0.5rem;
+    padding-bottom: 0.2rem;
+  }
 }
 
 .logo {
-  height: 1em;
   margin-left: 0.5rem;
 }

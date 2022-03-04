@@ -1,6 +1,40 @@
 .flight-visualization {
-    outline: solid red 1px;
-    margin: 0 10px;
+    width: 100%;
+    border: solid 1px grey;
+    margin: 10px 10px;
     max-width: 400px;
     max-height: 1000px;
+
+    .flight {
+        opacity: 0;
+        animation: revealFlight 14s cubic-bezier(0.26, 0.8, 0.64, 0.81) forwards;
+        animation-delay: 1s;
+    }
+
+    .grid {
+        animation: revealGrid 3s cubic-bezier(0.18, 0.61, 0.88, 0.35) forwards;
+        animation-delay: 0.5s;
+    }
+}
+
+@keyframes revealFlight {
+
+    0%{    
+        opacity: 1;
+        clip-path: circle(0% at 0% 100%);
+    }
+    100%{
+        opacity: 1;
+        clip-path: circle(160% at 0% 0%);
+    }
+}
+
+@keyframes revealGrid {
+    0% {
+        clip-path: circle(0% at -10% -50%); // left upper corner 0 opacity
+    }
+
+    100% {
+        clip-path: circle(150% at 0% 100%);
+    }
 }

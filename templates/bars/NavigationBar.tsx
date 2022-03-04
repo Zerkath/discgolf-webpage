@@ -4,11 +4,11 @@ export const NavigationBar = () => {
     return (
         <div className='navbar'>
             <NavContent display="Home" link='/' />
-            <NavContent display="History" link='/pages/history' />
-            <NavContent display="Terminology" link='/pages/terminology' />
-            <NavContent display="Disc Reviews" link='/pages/reviews' />
-            <NavContent display="How to get started" link='/pages/how-to-start' />
-            <NavContent display="Flight number visualizer" link='/pages/visualizer' />
+            <NavContent display="History" link='/history' />
+            <NavContent display="Terminology" link='/terminology' />
+            <NavContent display="Disc Reviews" link='/reviews' />
+            <NavContent display="How to get started" link='/how-to-start' />
+            <NavContent display="Flight number visualizer" link='/visualizer' />
         </ div >
     )
 }

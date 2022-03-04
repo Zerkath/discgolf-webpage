@@ -1,13 +1,13 @@
 import type { NextPage } from 'next'
 import { PageContainer } from '../templates/misc/PageContainer'
 
-const History: NextPage = () => {
+const Reviews: NextPage = () => {
     return (
-        <PageContainer title='Visualization Tool' description='Provides the visualization tool to the end user'>
+        <PageContainer title='Disc reviews' description='Reviews and pictures of discs'>
             <div className='card'>
             </div>
         </PageContainer>
     )
 }
 
-export default History
+export default Reviews

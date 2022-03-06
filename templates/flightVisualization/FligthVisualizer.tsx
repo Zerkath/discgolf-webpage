@@ -15,6 +15,7 @@ type VisualizerProps = {
     flightNums: FlightNumbers,
     discName: string,
     manufacturer: string
+    style?: string
 }
 
 
@@ -38,7 +39,7 @@ function getFlightPath(flightNums: FlightNumbers, width: number, height: number)
     let max = Math.max(width, height)
 
     let normalized = normalizeNumbers(flightNums, max)
-    console.log(normalized)
+
     let { speed, glide, stability, fade } = normalized
 
     let h = height / (100 * (max / height))
@@ -64,8 +65,6 @@ function getFlightPath(flightNums: FlightNumbers, width: number, height: number)
 
     var svg = `M ${startCoord} ${curve} Q${(apexX - apexXDiff).toFixed(3)}, ${(apexY - h * 5).toFixed(3)} ${fadeX.toFixed(3)}, ${(distance - h * 5).toFixed(3)}`
 
-    console.log(svg, flightNums)
-
     return svg
 }
 
@@ -82,7 +81,7 @@ function normalizeNumbers(flightNums: FlightNumbers, divider: number): FlightNum
 export const FlightVisualizer = (props: VisualizerProps) => {
     let { speed, glide, stability, fade } = props.flightNums
     return (
-        <svg viewBox="0 0 10 20" className='flight-visualization'>
+        <svg viewBox="0 0 10 20" className={`flight-visualization ${props.style}`} >
             <text x="0.2" y="1.2" fontSize={1.2}>{props.manufacturer}</text>
             <text x="0.2" y="2.4" fontSize={1}>{props.discName}</text>
             <text dx="0.2" y="3.6" fontSize={0.8}>{`${speed} / ${glide} / ${stability} / ${fade}`}</text>

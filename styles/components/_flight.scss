@@ -1,10 +1,6 @@
 .flight-visualization {
     width: 100%;
-    display: block;
-    
-    border: solid 1px darkgrey;
-    max-width: 50%;
-
+    display: inline-block;
     .flight {
         opacity: 0;
         animation: revealFlight 14s cubic-bezier(0.26, 0.8, 0.64, 0.81) forwards;

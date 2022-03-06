@@ -17,7 +17,9 @@ export const PageContainer = (props: HeaderValues): React.ReactElement => {
             </Head>
             <NavigationBar />
             <main className='main'>
-                {props.children}
+                <div className='grid'>
+                    {props.children}
+                </div>
             </main>
             <Footer />
         </div>

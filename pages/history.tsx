@@ -3,7 +3,7 @@ import { PageContainer } from '../templates/misc/PageContainer'
 
 const History: NextPage = () => {
     return (
-        <PageContainer title='Visualization Tool' description='Provides the visualization tool to the end user'>
+        <PageContainer title='History Underconstruction' description='Brief history of the sport'>
             <div className='card'>
             </div>
         </PageContainer>

@@ -28,12 +28,10 @@
 * Basic styles for links
 */
 a {
-    color: $brand-color;
-    text-decoration: none;
+    color: inherit;
+    text-decoration: underline;
 
     @include on-event {
-        color: $text-color;
-        text-decoration: underline;
+        text-decoration: underline grey;
     }
 }
-

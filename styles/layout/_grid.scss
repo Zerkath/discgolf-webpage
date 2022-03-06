@@ -1,8 +1,9 @@
 .grid {
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
-    max-width: 1200px;
+    justify-content: center;
+    grid-column-gap: 1rem;
+    max-width: 1600px;
     margin: 0;
+    // padding: 1rem;
 }

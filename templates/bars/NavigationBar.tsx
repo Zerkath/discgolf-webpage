@@ -8,7 +8,7 @@ export const NavigationBar = () => {
             <NavContent display="Terminology" link='/terminology' />
             <NavContent display="Disc Reviews" link='/reviews' />
             <NavContent display="How to get started" link='/starter' />
-            <NavContent display="Flight number visualizer" link='/visualizer' />
+            {/* <NavContent display="Flight number visualizer" link='/visualizer' /> */}
         </ div >
     )
 }

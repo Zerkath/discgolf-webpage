@@ -42,10 +42,12 @@ const Home: NextPage = () => {
 
           <p>The amount of disc golf courses is also rapidly growing.</p>
 
-          <p>Chart provided by <Link href="https://udisc.com/disc-golf-growth-report">UDisc &rarr;</Link></p>
+          <p>Chart provided by <Link href="https://udisc.com/">UDisc &rarr;</Link></p>
         </div>
         <div className='card-image-container bigger'>
-          <Image src={stats} alt="Placeholder alt" className="image" />
+          <a href="https://udisc.com/disc-golf-growth-report">
+            <Image src={stats} alt="Placeholder alt" className="image" />
+          </a>
         </div>
         <div className='card-text max'>
           <p>

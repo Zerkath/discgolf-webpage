@@ -32,6 +32,6 @@ a {
     text-decoration: underline;
 
     @include on-event {
-        text-decoration: underline grey;
+        text-decoration: underline lightseagreen;
     }
 }

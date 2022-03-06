@@ -81,11 +81,11 @@ function normalizeNumbers(flightNums: FlightNumbers, divider: number): FlightNum
 export const FlightVisualizer = (props: VisualizerProps) => {
     let { speed, glide, stability, fade } = props.flightNums
     return (
-        <svg viewBox="0 0 12 20" className={`flight-visualization ${props.style || ""}`} >
+        <svg viewBox="0 0 10 20" className={`flight-visualization ${props.style || ""}`} >
             <text x="0.2" y="1.2" fontSize={1.2}>{props.manufacturer}</text>
             <text x="0.2" y="2.4" fontSize={1}>{props.discName}</text>
             <text dx="0.2" y="3.6" fontSize={0.8}>{`${speed} / ${glide} / ${stability} / ${fade}`}</text>
-            <path className="flight" d={getFlightPath(props.flightNums, 12, 20)} stroke="black" fill="transparent" stroke-width={0.08}></path>
+            <path className="flight" d={getFlightPath(props.flightNums, 10, 20)} stroke="black" fill="transparent" stroke-width={0.08}></path>
             <BackgroundGrid />
         </ svg >
     )

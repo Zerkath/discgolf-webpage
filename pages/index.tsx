@@ -28,7 +28,7 @@ const Home: NextPage = () => {
             but give an overall idea how a disc is going to fly.
           </p>
           <p>
-            Disc golf can be a affordable hobby, discs aren't too expensive and most courses are free to use.
+            Disc golf can be a affordable hobby, discs aren&#39t too expensive and most courses are free to use.
             Check out more information at
           </p>
           <Link href="/starter">How to get started &rarr;</Link>
@@ -46,7 +46,7 @@ const Home: NextPage = () => {
         </div>
         <div className='card-image-container bigger'>
           <a href="https://udisc.com/disc-golf-growth-report">
-            <Image src={stats} alt="Placeholder alt" className="image" />
+            <Image src={stats} alt="Disc golf growth chart" className="image" />
           </a>
         </div>
         <div className='card-text max'>

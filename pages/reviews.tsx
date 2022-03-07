@@ -38,14 +38,14 @@ const Reviews: NextPage = () => {
                         discName="Hatchet"
                     />
                     <div className='card-image-container'>
-                        <Image className='image' src={image_hatchet}></Image>
+                        <Image className='image' alt="Westside Hatchet" src={image_hatchet}></Image>
                     </div>
                 </div>
 
                 <div className='card-text max'>
                     <p>
                         My own estimate of the flight numbers is 8/6/-3/1 the disc is slightly more understable than the original numbers
-                        and the disc doesn't feel as fast as 9, it has some difficulty cutting through air.
+                        and the disc doesn&#39t feel as fast as 9, it has some difficulty cutting through air.
                     </p>
                 </div>
             </div>
@@ -63,7 +63,7 @@ const Reviews: NextPage = () => {
                         Intermediates will get good distance from the Warship with a very straight flight.
                     </p>
                     <p>
-                        It's almost a low speed fairway driver with minimal fade, included benefit is the wider rim when compared to a fairway driver meaning the flight is very predictable.
+                        It&#39s almost a low speed fairway driver with minimal fade, included benefit is the wider rim when compared to a fairway driver meaning the flight is very predictable.
                     </p>
                 </div>
                 <div className='card-images smaller'>
@@ -73,12 +73,12 @@ const Reviews: NextPage = () => {
                         discName="Warship"
                     />
                     <div className='card-image-container'>
-                        <Image className='image' src={image_warship}></Image>
+                        <Image className='image' alt="Westside Warpship" src={image_warship}></Image>
                     </div>
                 </div>
                 <div className='card-text max'>
                     <p>
-                        I think the old 6/5/0/1 flight numbers were perfectly accuarate. It's a disc I would recommend to anyone, the shape and size is very comfortable to use.
+                        I think the old 6/5/0/1 flight numbers were perfectly accuarate. It&#39s a disc I would recommend to anyone, the shape and size is very comfortable to use.
                     </p>
                 </div>
             </div>
@@ -109,7 +109,7 @@ const Reviews: NextPage = () => {
                         discName="Warship"
                     />
                     <div className='card-image-container'>
-                        <Image className='image' src={image_mercy}></Image>
+                        <Image className='image' alt="Latitude Mercy" src={image_mercy}></Image>
                     </div>
                 </div>
             </div>
@@ -118,14 +118,14 @@ const Reviews: NextPage = () => {
                 <div className='card-text bigger'>
                     <h2>Latitude 64 Mercy</h2>
                     <p>
-                        Discmania P2 is a moderately deep putter with a boxy shape. It's a very straight flying putter for approaches.
+                        Discmania P2 is a moderately deep putter with a boxy shape. It&#39s a very straight flying putter for approaches.
                     </p>
                     <p>
-                        The shape is a bit unusual it has some changes of direction and doesn't feel as smooth as some other putters.
+                        The shape is a bit unusual it has some changes of direction and doesn&#39t feel as smooth as some other putters.
                         I think it suits larger hands better, than a Discmania Sensei.
                     </p>
                     <p>
-                        Very neutral putting flight, doesn't overly catch the wind.
+                        Very neutral putting flight, doesn&#39t overly catch the wind.
                     </p>
                     <p>
                         Good disc, has had some supply issues in the past, currently released model is in flex 2 plastic and supply issues seem to have been mostly solved.
@@ -138,7 +138,7 @@ const Reviews: NextPage = () => {
                         discName="P2"
                     />
                     <div className='card-image-container'>
-                        <Image className='image' src={image_p2}></Image>
+                        <Image className='image' alt="Discmania Mercy" src={image_p2}></Image>
                     </div>
                 </div>
             </div>
@@ -166,7 +166,7 @@ const Reviews: NextPage = () => {
                         discName="Wraith"
                     />
                     <div className='card-image-container'>
-                        <Image className='image' src={image_wraith}></Image>
+                        <Image className='image' alt="Innova Wraith" src={image_wraith}></Image>
                     </div>
                 </div>
             </div>

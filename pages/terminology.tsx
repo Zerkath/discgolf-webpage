@@ -16,7 +16,7 @@ const Terminology: NextPage = () => {
                         Anhyzer is the opposite of hyzer, meaning the discs outside edge is leaning towards the sky.
                     </p>
                     <p>
-                        A disc released in hyzer, given that its stable enough will end up left for a right handed thrower if they're throwing backhand.
+                        A disc released in hyzer, given that its stable enough will end up left for a right handed thrower if they&#39re throwing backhand.
                     </p>
                 </div>
             </div>
@@ -28,7 +28,7 @@ const Terminology: NextPage = () => {
                         Backhand is the go to throw for most players, it allows for the most amount of spin and power on the disc.
                     </p>
                     <p>
-                        Backhand throw for right hand will end up on the left if the disc isn't too understable.
+                        Backhand throw for right hand will end up on the left if the disc isn&#39t too understable.
                         Opposite for lefthanded players, the disc will go right.
                     </p>
                     <p>

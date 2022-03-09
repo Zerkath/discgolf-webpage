@@ -30,6 +30,10 @@ const Reviews: NextPage = () => {
                     <p>
                         For a advanced player the instability might be too much for typical throws and it might have a roller only role in the bag.
                     </p>
+                    <p>
+                        My own estimate of the flight numbers is 8/6/-3/1 the disc is slightly more understable than the original numbers
+                        and the disc doesn&apos;t feel as fast as 9, it has some difficulty cutting through air.
+                    </p>
                 </div>
                 <div className='card-images smaller'>
                     <FlightVisualizer
@@ -38,51 +42,11 @@ const Reviews: NextPage = () => {
                         discName="Hatchet"
                     />
                     <div className='card-image-container'>
-                        <Image className='image' alt="Westside Hatchet" src={image_hatchet}></Image>
+                        <Image className='image' priority alt="Westside Hatchet" src={image_hatchet}></Image>
                     </div>
                 </div>
-
-                <div className='card-text max'>
-                    <p>
-                        My own estimate of the flight numbers is 8/6/-3/1 the disc is slightly more understable than the original numbers
-                        and the disc doesn&#39t feel as fast as 9, it has some difficulty cutting through air.
-                    </p>
-                </div>
             </div>
-            <div className='card'>
-                <div className='card-text bigger'>
-                    <h2>Westside Warship</h2>
-                    <p>
-                        The Westside Warship is a very high speed midrange. Previously listed as a 6 speed, readjusted number changed to 5.
-                    </p>
-                    <p>
-                        I think this midrange is very suitable for every level of player.
-                    </p>
-                    <p>
-                        For beginners it might be a more overstable midranger that has a reliable fade.
-                        Intermediates will get good distance from the Warship with a very straight flight.
-                    </p>
-                    <p>
-                        It&#39s almost a low speed fairway driver with minimal fade, included benefit is the wider rim when compared to a fairway driver meaning the flight is very predictable.
-                    </p>
-                </div>
-                <div className='card-images smaller'>
-                    <FlightVisualizer
-                        flightNums={{ speed: 5, glide: 6, stability: 0, fade: 1 }}
-                        manufacturer="Westside"
-                        discName="Warship"
-                    />
-                    <div className='card-image-container'>
-                        <Image className='image' alt="Westside Warpship" src={image_warship}></Image>
-                    </div>
-                </div>
-                <div className='card-text max'>
-                    <p>
-                        I think the old 6/5/0/1 flight numbers were perfectly accuarate. It&#39s a disc I would recommend to anyone, the shape and size is very comfortable to use.
-                    </p>
-                </div>
-            </div>
-
+            <WarshipReview />
             <div className='card'>
                 <div className='card-text bigger'>
                     <h2>Latitude 64 Mercy</h2>
@@ -116,16 +80,16 @@ const Reviews: NextPage = () => {
 
             <div className='card'>
                 <div className='card-text bigger'>
-                    <h2>Latitude 64 Mercy</h2>
+                    <h2>Dismania P2</h2>
                     <p>
-                        Discmania P2 is a moderately deep putter with a boxy shape. It&#39s a very straight flying putter for approaches.
+                        Discmania P2 is a moderately deep putter with a boxy shape. It&apos;s a very straight flying putter for approaches.
                     </p>
                     <p>
-                        The shape is a bit unusual it has some changes of direction and doesn&#39t feel as smooth as some other putters.
+                        The shape is a bit unusual it has some changes of direction and doesn&apos;t feel as smooth as some other putters.
                         I think it suits larger hands better, than a Discmania Sensei.
                     </p>
                     <p>
-                        Very neutral putting flight, doesn&#39t overly catch the wind.
+                        Very neutral putting flight, doesn&apos;t overly catch the wind.
                     </p>
                     <p>
                         Good disc, has had some supply issues in the past, currently released model is in flex 2 plastic and supply issues seem to have been mostly solved.
@@ -175,3 +139,43 @@ const Reviews: NextPage = () => {
 }
 
 export default Reviews
+
+interface ReviewProps {
+    header?: string
+}
+
+export function WarshipReview(props: ReviewProps) {
+    return (
+        <div className='card'>
+            <div className='card-text bigger'>
+                <h2>{props.header || ""}Westside Warship</h2>
+                <p>
+                    The Westside Warship is a very high speed midrange. Previously listed as a 6 speed, readjusted number changed to 5.
+                </p>
+                <p>
+                    I think this midrange is very suitable for every level of player.
+                </p>
+                <p>
+                    For beginners it might be a more overstable midranger that has a reliable fade.
+                    Intermediates will get good distance from the Warship with a very straight flight.
+                </p>
+                <p>
+                    It&apos;s almost a low speed fairway driver with minimal fade, included benefit is the wider rim when compared to a fairway driver meaning the flight is very predictable.
+                </p>
+                <p>
+                    I think the old 6/5/0/1 flight numbers were perfectly accuarate. It&apos;s a disc I would recommend to anyone, the shape and size is very comfortable to use.
+                </p>
+            </div>
+            <div className='card-images smaller'>
+                <FlightVisualizer
+                    flightNums={{ speed: 5, glide: 6, stability: 0, fade: 1 }}
+                    manufacturer="Westside"
+                    discName="Warship"
+                />
+                <div className='card-image-container'>
+                    <Image className='image' alt="Westside Warpship" src={image_warship}></Image>
+                </div>
+            </div>
+        </div>
+    )
+}

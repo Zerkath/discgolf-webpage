@@ -17,14 +17,14 @@ const Starter: NextPage = () => {
                         and it is recommendable to hold a couple of putters and pick something that feels comfortable.
                     </p>
                     <p>
-                        For a midrange I would recommend something more on the stable side for a straight flight and that doesn&#39t require perfect technique.
+                        For a midrange I would recommend something more on the stable side for a straight flight and that doesn&apos;t require perfect technique.
                         Innova Mako3 is one of the goto discs for midranges and it will be useful in the future aswell.
                         Alternatives to the Mako3 could be MVP Axis, Discraft Buzz SS. You cannot go wrong with a Westside Warship either.
                     </p>
                     <p>
-                        For a fairway picking something slightly understable isn&#39t a bad option.
-                        Example discs would be the Innova Leopard3 with flight nubmers of 7/5/-2/1 or something from the Latitude 64 beginner discs.
-                        Latitude 64 Diamond 8/6/-3/1. Latitude beginner discs are usually lower weight also which makes it easier to get them up to speed.
+                        For a fairway picking something slightly understable is not a bad option.
+                        For example the Innova Leopard3 with flight numbers of 7/5/-2/1.
+                        Latitude 64 Diamond 8/6/-3/1. Latitude produces beginner discs with lower weights.
                     </p>
                     <p>
                         Here is some beginner tips by Nate Sexton

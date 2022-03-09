@@ -4,6 +4,7 @@ import Image from 'next/image'
 import stats from '../images/statistics.webp'
 import { PageContainer } from '../templates/misc/PageContainer'
 import Link from 'next/link'
+import { WarshipReview } from './reviews'
 
 
 const Home: NextPage = () => {
@@ -28,7 +29,7 @@ const Home: NextPage = () => {
             but give an overall idea how a disc is going to fly.
           </p>
           <p>
-            Disc golf can be a affordable hobby, discs aren&#39t too expensive and most courses are free to use.
+            Disc golf can be a affordable hobby, discs aren&apos;t too expensive and most courses are free to use.
             Check out more information at
           </p>
           <Link href="/starter">How to get started &rarr;</Link>
@@ -56,6 +57,7 @@ const Home: NextPage = () => {
           </p>
         </div>
       </div>
+      <WarshipReview header='Latest review: ' />
     </PageContainer>
   )
 }

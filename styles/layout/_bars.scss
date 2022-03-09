@@ -1,13 +1,28 @@
 @use '../base/base';
 @import '../abstracts/colors';
 
+.navbar {
+    padding: 2rem 0.5rem;
+    margin-bottom: 1.5rem;
+    margin: 0;
+    background-color: $content-background;
+    border-bottom: 1px solid $light-dark;
+}
+
+.navbar a {
+    display: inline-block;
+    min-width: fit-content;
+    border-radius: 0.2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 .footer {
     background-color: $content-background;
     justify-content: center;
-    border-top: 1px solid #2f2f2f;
+    border-top: 1px solid $light-dark;
     font-size: medium;
     display: flex;
-    flex-direction: column;
     align-content: center;
 }
 
@@ -18,8 +33,8 @@
 }
 
 .footer-content {
-  columns: 200px 3;
-  column-rule: black 1px solid;
+  columns: 250px 2;
+  column-rule: 1px solid $light-dark;
   column-gap: 2em;
   padding-bottom: 2em;
 }
@@ -29,7 +44,6 @@
     margin: 0;
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-top: 0.5rem;
     padding-bottom: 0.2rem;
   }
 }

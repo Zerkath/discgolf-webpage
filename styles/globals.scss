@@ -1,20 +1,27 @@
 @import 'abstracts/variables';
+@import 'abstracts/colors';
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: $dark;
+  font-family: 'Fredoka', sans-serif;
   background-position: bottom left;
-  background-size: cover;
-  // background-attachment: fixed;
-
 }
 
 html {
   background-image: url('/background.webp');
   background-size: cover;
+}
+
+@media (max-width: 1020px) {
+  html {
+    background-image: repeating-linear-gradient(-20deg, $lake-blue, darken($lake-blue, 6) 10%, $lake-blue 16%);
+  }
+
 }
 
 // * {

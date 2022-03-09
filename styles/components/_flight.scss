@@ -1,14 +1,20 @@
+@import '../abstracts/colors';
+
 .flight-visualization {
     width: 100%;
     display: inline-block;
     .flight {
+        stroke: $dark-blue;
+        z-index: 0;
         opacity: 0;
-        animation: revealFlight 14s cubic-bezier(0.26, 0.8, 0.64, 0.81) forwards;
+        animation: revealFlight 12s cubic-bezier(0.26, 0.8, 0.64, 0.81) forwards;
         animation-delay: 1s;
     }
 
     .grid {
-        animation: revealGrid 3s cubic-bezier(0.18, 0.61, 0.88, 0.35) forwards;
+        stroke: rgba($dark-blue, 0.35);
+        stroke-width: 0.06;
+        animation: revealGrid 4.2s cubic-bezier(0.18, 0.61, 0.88, 0.35) forwards;
         animation-delay: 0.5s;
     }
 }

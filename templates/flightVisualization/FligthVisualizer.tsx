@@ -7,7 +7,7 @@ interface FlightNumbers {
 
 export function BackgroundGrid() {
     return (
-        <path className="grid" stroke="grey" strokeWidth=".02" d={gridString(20)} />
+        <path className="grid" strokeWidth=".02" d={gridString(20)} />
     )
 }
 
@@ -82,11 +82,11 @@ export const FlightVisualizer = (props: VisualizerProps) => {
     let { speed, glide, stability, fade } = props.flightNums
     return (
         <svg viewBox="0 0 10 20" className={`flight-visualization ${props.style || ""}`} >
+            <BackgroundGrid />
             <text x="0.2" y="1.2" fontSize={1.2}>{props.manufacturer}</text>
             <text x="0.2" y="2.4" fontSize={1}>{props.discName}</text>
             <text dx="0.2" y="3.6" fontSize={0.8}>{`${speed} / ${glide} / ${stability} / ${fade}`}</text>
-            <path className="flight" d={getFlightPath(props.flightNums, 10, 20)} stroke="black" fill="transparent" strokeWidth={0.08}></path>
-            <BackgroundGrid />
+            <path className="flight" d={getFlightPath(props.flightNums, 10, 20)} fill="transparent" strokeWidth={0.08}></path>
         </ svg >
     )
 }

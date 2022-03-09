@@ -4,7 +4,7 @@ import { PageContainer } from '../templates/misc/PageContainer'
 
 const Terminology: NextPage = () => {
     return (
-        <PageContainer title='Disc Golf Terminology' description='Descriptions of disc golf terms'>
+        <PageContainer title='Disc golf terminology' description='Descriptions of disc golf terms'>
             <div className='card'>
                 <div className='card-text max'>
                     <h2>Hyzer and Anhyzer</h2>
@@ -17,37 +17,6 @@ const Terminology: NextPage = () => {
                     </p>
                     <p>
                         A disc released in hyzer, given that its stable enough will end up left for a right handed thrower if they&apos;re throwing backhand.
-                    </p>
-                </div>
-            </div>
-
-            <div className='card'>
-                <div className='card-text max'>
-                    <h2>Backhand BH</h2>
-                    <p>
-                        Backhand is the go to throw for most players, it allows for the most amount of spin and power on the disc.
-                    </p>
-                    <p>
-                        Backhand throw for right hand will end up on the left if the disc isn&apos;t too understable.
-                        Opposite for lefthanded players, the disc will go right.
-                    </p>
-                    <p>
-                        RHBH right hand backhand or LHBH left hand backhand.
-                    </p>
-                </div>
-            </div>
-
-            <div className='card'>
-                <div className='card-text max'>
-                    <h2>Forehand FH</h2>
-                    <p>
-                        Forehand is a good throw to develop it allows the disc to finish to the right for right handed players and left for left handed players.
-                    </p>
-                    <p>
-                        With the forehand the palm is pointing towards the sky during the throw and the power mostly comes from a flick of a wrist.
-                    </p>
-                    <p>
-                        RHFH Right hand forehand or LHFH left hand forehand
                     </p>
                 </div>
             </div>
@@ -78,6 +47,39 @@ const Terminology: NextPage = () => {
             </div>
 
             <div className='card'>
+                <div className='card-text max'>
+                    <h2>Backhand BH</h2>
+                    <p>
+                        Backhand is the go to throw for most players, it allows for the most amount of spin and power on the disc.
+                    </p>
+                    <p>
+                        Backhand throw for right hand will end up on the left if the disc isn&apos;t too understable.
+                        Opposite for left-handed players, the disc will go right.
+                    </p>
+                    <p>
+                        RHBH right hand backhand or LHBH left hand backhand.
+                    </p>
+                </div>
+            </div>
+
+            <div className='card'>
+                <div className='card-text max'>
+                    <h2>Forehand FH</h2>
+                    <p>
+                        Forehand is a good throw to develop it allows the disc to finish to the right for right handed players and left for left handed players.
+                    </p>
+                    <p>
+                        With the forehand the palm is pointing towards the sky during the throw and the power mostly comes from a flick of a wrist.
+                    </p>
+                    <p>
+                        RHFH Right hand forehand or LHFH left hand forehand
+                    </p>
+                </div>
+            </div>
+
+
+
+            <div className='card'>
                 <div className='card-text bigger'>
                     <h2>Overstability</h2>
                     <p>
@@ -87,7 +89,7 @@ const Terminology: NextPage = () => {
                         Overstable discs are usually utility discs where you want the disc to not go the right during the flight and finish hard to the left.
                     </p>
                     <p>
-                        A common utily disc is a 9 speed 3 glide 0 stability and 4 fade disc. These are not meant of long distances but rather controller fairway drives to avoid some obstacles.
+                        A common utility disc is a 9 speed 3 glide 0 stability and 4 fade disc. These are not meant of long distances but rather controller fairway drives to avoid some obstacles.
                     </p>
                 </div>
                 <FlightVisualizer

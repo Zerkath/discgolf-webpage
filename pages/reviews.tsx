@@ -15,24 +15,20 @@ const Reviews: NextPage = () => {
                 <div className='card-text bigger'>
                     <h2>Westside Hatchet</h2>
                     <p>
-                        Westside Hatchet is a understable fairway driver, flight numbers are 9/6/-2/1 according to Westside.
-                        The disc has amazing glide, but the understability makes it a very situational disc.
-
+                        Westside Hatchet is a understable fairway driver, flight numbers are 9/6/-2/1 according to Westside. The disc has amazing glide, but the understability makes it a very situational disc.
                     </p>
                     <p>
-                        For an beginner the disc provides a straight flight and good distance due to the glide,
-                        also the fade means the disc wont move too much at the end of the flight.
+                        For a beginner the disc provides a straight flight and good distance due to the glide, also the fade means the disc won&apos;t move too much at the end of the flight.
                     </p>
                     <p>
-                        A intermediate player can utilize the disc for hyzerflips and anzhyzer angles.
-                        Hatchet is a great disc for learning how to throw an understable disc.
+                        An intermediate player can utilize the disc for hyzerflips and anhyzer angles. Hatchet is a great disc for learning how to throw an understable disc.
                     </p>
                     <p>
-                        For a advanced player the instability might be too much for typical throws and it might have a roller only role in the bag.
+                        For an advanced player the understability might be too much for typical throws and it might have a roller only role in the bag.
                     </p>
                     <p>
-                        My own estimate of the flight numbers is 8/6/-3/1 the disc is slightly more understable than the original numbers
-                        and the disc doesn&apos;t feel as fast as 9, it has some difficulty cutting through air.
+                        My own estimate of the flight numbers is 8/6/-3/1 the disc is slightly more understable than the original numbers and the disc doesn&apos;t feel as fast as 9,
+                        it has some difficulty cutting through air, and isn&apos;t going to reach similar distances as other 9 speeds.
                     </p>
                 </div>
                 <div className='card-images smaller'>
@@ -51,19 +47,19 @@ const Reviews: NextPage = () => {
                 <div className='card-text bigger'>
                     <h2>Latitude 64 Mercy</h2>
                     <p>
-                        The mercy is a deep rimmed putter with a very neutral flight with moderate power.
+                        The mercy is a deep rim putter with a very neutral flight. Slightly less deep than a Latitude Dagger.
                     </p>
                     <p>
-                        I would recommend the putter for people who prefer a beadless deeprimmed putter with a good glide.
+                        I would recommend the putter for people who prefer a putter without a bead. Very comparable to the Dagger slightly less overstable and less glide.
                     </p>
                     <p>
-                        During puts when compared to other putters I feel that this disc floats a bit more.
+                        During puts when compared to other putters I feel that this disc floats a bit more. Which means it tends to catch the wind.
                     </p>
                     <p>
-                        For approaches and distance I think  the putter is good, although the deep rim might cause some issues with grip causing some wobble.
+                        For approaches and distance, I think the putter is good, although the deep rim might cause some issues with grip causing some wobble and grip locks.
                     </p>
                     <p>
-                        Overall I think the flight numbers are accuarate, I have only tried the disc with zero hard plastic, and the durability seems to be good.
+                        Overall, I think the flight numbers are accurate, I have only tried the disc with zero hard plastic, and the durability seems to be good.
                     </p>
                 </div>
                 <div className='card-images smaller'>
@@ -85,11 +81,10 @@ const Reviews: NextPage = () => {
                         Discmania P2 is a moderately deep putter with a boxy shape. It&apos;s a very straight flying putter for approaches.
                     </p>
                     <p>
-                        The shape is a bit unusual it has some changes of direction and doesn&apos;t feel as smooth as some other putters.
-                        I think it suits larger hands better, than a Discmania Sensei.
+                        The shape is a bit unusual it has some changes of direction and doesn&apos;t feel as smooth as some other putters. I think it suits larger hands better than its sibling the Discmania Sensei.
                     </p>
                     <p>
-                        Very neutral putting flight, doesn&apos;t overly catch the wind.
+                        Very neutral putting flight doesn&apos;t overly catch the wind. If you like the feel, it will suit you well.
                     </p>
                     <p>
                         Good disc, has had some supply issues in the past, currently released model is in flex 2 plastic and supply issues seem to have been mostly solved.
@@ -114,10 +109,13 @@ const Reviews: NextPage = () => {
                         The Innova Wraith is a very popular 11 speed distance driver. It has a good blend of understability and provides some good distance for intermediates and professionals.
                     </p>
                     <p>
-                        The shape is smooth, the rim isnt overly large and can be handled by most hand sizes. Comes in most Innova plastics.
+                        The shape is smooth, the rim isn&apos;t overly large and can be handled by most hand sizes. Comes in most Innova plastics. Star and champion plastics going for about 15 euros, dx variants for 12.
                     </p>
                     <p>
-                        Can provide a very straight shot with a hyzer flip or maximum distance with a S line curve.
+                        For beginners the speed might be too much to get the full flight out of it. But it&apos;s a good disc to grow into and will at least be useful for beginners in headwinds and throws where stability is required.
+                    </p>
+                    <p>
+                        For intermediates and professionals, it can provide a very straight shot with a hyzer flip or maximum distance with a S line curve.
                     </p>
                     <p>
                         Probably one of the best distance drivers out there for most players, requires some experience to get the most out of it.
@@ -150,20 +148,20 @@ export function WarshipReview(props: ReviewProps) {
             <div className='card-text bigger'>
                 <h2>{props.header || ""}Westside Warship</h2>
                 <p>
-                    The Westside Warship is a very high speed midrange. Previously listed as a 6 speed, readjusted number changed to 5.
+                    The Westside Warship is a higher speed midrange driver. Previously listed as a 6 speed, readjusted number changed to 5.
                 </p>
                 <p>
                     I think this midrange is very suitable for every level of player.
                 </p>
                 <p>
-                    For beginners it might be a more overstable midranger that has a reliable fade.
+                    For beginners it might be a more overstable midrange that has a reliable fade.
                     Intermediates will get good distance from the Warship with a very straight flight.
                 </p>
                 <p>
-                    It&apos;s almost a low speed fairway driver with minimal fade, included benefit is the wider rim when compared to a fairway driver meaning the flight is very predictable.
+                    It&apos;s almost a low-speed fairway driver with minimal fade, included benefit is the wider rim when compared to a fairway driver meaning the flight is very predictable.
                 </p>
                 <p>
-                    I think the old 6/5/0/1 flight numbers were perfectly accuarate. It&apos;s a disc I would recommend to anyone, the shape and size is very comfortable to use.
+                    I think the old 6/5/0/1 flight numbers were perfectly accurate. It&apos;s a disc I would recommend to anyone, the shape and size is very comfortable to use.
                 </p>
             </div>
             <div className='card-images smaller'>
